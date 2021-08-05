@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+
+body{
+    min-height: 100vh;
+    width:100vw;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.container
+{
+    display: flex;
+    height:400px;
+    width:65vw;
+    border-radius: 5px;
+    /* margin-top:150px;
+    margin-left:17.0vw;
+    margin-right: 17.5vw; */
+}
+.box{
+    display:flex;
+    padding:40px;
+    flex-direction: column;
+    align-items: left;
+    width:calc(65/3vw);
+    height:350px;
+    justify-content: space-between;
+}
+.box:nth-child(1)
+{
+    background-color:hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.box:nth-child(2)
+{
+    background-color:hsl(184, 100%, 22%);
+}
+.box:nth-child(3)
+{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.box .top h2{
+    font-family: 'Big Shoulders Display', cursive;
+    color:hsl(0, 0%, 95%);
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    font-weight: 700;
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color:hsla(0, 0%, 100%, 0.75);
+    text-align: left;
+    font-weight: 400;
+    overflow:wrap;
+}
+.btn{
+    background-color:hsl(0, 0%, 95%);
+    border-radius: 20px;
+    padding:10px;
+    font-size:15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    width:150px;
+    border: none;
+    cursor:pointer;
+}
+.one
+{
+    color:hsl(31, 77%, 52%);
+}
+.two
+{
+    color:hsl(184, 100%, 22%);
+}
+.three
+{
+    color:hsl(179, 100%, 13%);
+}
+.btn:hover{
+    background: transparent;
+    border:2px solid hsl(0, 0%, 95%);
+    color:hsl(0, 0%, 95%);
+}
+@media screen and (max-width:768px)
+{
+    
+
+    .box{
+        height:60vh;
+        width:80%;
+    }
+    .container{
+        flex-direction: column;
+
+        height:fit-content;
+        width:90%;
+        margin-top:100px;
+        padding-left: 10px;
+        padding-right:10px;
+        left:10px;
+    }
+    body{
+        overflow-y: visible;
+        display: block;
+    }
+
+}
