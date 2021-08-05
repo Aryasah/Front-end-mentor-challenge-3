@@ -94,7 +94,16 @@ p{
 
     .box{
         height:60vh;
-        width:80%;
+        width:75%;
+    }
+    .box:nth-child(1){
+        border-top-right-radius: 5px;
+        border-bottom-left-radius:0px;
+    }
+    .box:nth-child(3)
+    {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
     }
     .container{
         flex-direction: column;
@@ -104,6 +113,7 @@ p{
         margin-top:100px;
         padding-left: 10px;
         padding-right:10px;
+        margin-bottom: 100px;
         left:10px;
     }
     body{
